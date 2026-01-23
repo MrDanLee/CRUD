@@ -1,0 +1,27 @@
+GET http://localhost:3000/usuarios
+
+###
+GET http://localhost:3000/usuarios/ryu
+
+###
+POST http://localhost:3000/usuarios
+content-type: application/json
+
+{
+    "nombre": "Data", 
+    "edad": "28",
+    "lugarProcedencia": "Spain"
+  } 
+
+###
+PUT http://localhost:3000/usuarios/ryu
+content-type: application/json
+
+{
+    "nombre": "Data", 
+    "edad": "32",
+    "lugarProcedencia": "Spainadfa"
+  } 
+
+###
+DELETE http://localhost:3000/usuarios/ryu
